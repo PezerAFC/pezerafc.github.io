@@ -1,0 +1,126 @@
+body {
+	grid-template-rows: 10% 75% 15%;
+	grid-template-areas: "nav" "main" "footer";
+}
+
+#main {
+	left: 0px;
+	margin-top: 10%;
+	padding-top: 1em;
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#slika {
+	padding-bottom: 2em;
+}
+#forma {
+	display: flex;
+	flex-direction: column;
+}
+#sbar {
+	padding: 0.8rem 0.7rem 0.8rem 2rem;
+	width: 620px;
+	border-radius: 25px;
+	outline-style: none;
+	text-align: left;
+}
+#sbar:hover {
+	box-shadow: 0px 0px 7px 1px blue;
+}
+#sbar:focus {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#idbtn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	opacity: 0.7;
+}
+.btn:hover {
+	color: black;
+	transform: scale(1.1);
+	cursor: pointer;
+	border: blueviolet solid 1px;
+}
+.btn {
+	padding: 0.8em 1em 0.8em 1em;
+	margin: 0.5em;
+}
+#navbar {
+	grid-area: nav;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+#navbar nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#navbar nav ul li {
+	padding: 0.3em 1em 0.3em 0.3em;
+	list-style: none;
+}
+
+#navbar nav ul li a {
+	color: black;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	grid-area: footer;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(95, 99, 104, 0.1);
+	justify-content: space-between;
+}
+#lijevo {
+	display: flex;
+	padding: 0 0.5em 0 0.5em;
+	list-style: none;
+	align-items: flex-end;
+}
+#lijevo li {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+#lijevo li a {
+	color: #444242;
+}
+
+#desno {
+	display: flex;
+	padding: 0 0.5em 0 0.5em;
+	list-style: none;
+	align-items: flex-end;
+	justify-content: flex-end;
+	text-align: right;
+}
+#desno li {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+#desno li a {
+	color: #444242;
+}
+
+#sbar {
+	background: url(/images/iconsx.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
